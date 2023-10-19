@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="cart">
+        <div class="item">
+            <img src="item1.jpg" alt="Item 1">
+            <div class="item-details">
+                <p>Item 1</p>
+                <p>$10.00</p>
+            </div>
+            <div class="item-controls">
+                <button class="like-button" onclick="toggleLike(this)">&#x2665;</button>
+                <button class="decrement" onclick="decrementQuantity(this)">-</button>
+                <span class="quantity">1</span>
+                <button class="increment" onclick="incrementQuantity(this)">+</button>
+                <button class="delete" onclick="deleteItem(this)">Delete</button>
+            </div>
+        </div>
+        <!-- Add more items with similar structure here -->
+    </div>
+    <p>Total Price: <span id="total-price">$0.00</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
